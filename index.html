@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="0.jpg"  rel="cotent icon">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+    <h1>Calculator</h1>
+    <form name="cal">
+        <input type="text" name="display">
+        <br><br>
+        <input type="button"  onclick="cal.display.value+='9'" value="9">
+        <input type="button"  onclick="cal.display.value+='8'" value="8">
+        <input type="button"  onclick="cal.display.value+='7'" value="7">
+        <input type="button"  onclick="cal.display.value+='+'" value="+">
+        <br><br>
+        <input type="button"  onclick="cal.display.value+='9'" value="6">
+        <input type="button"  onclick="cal.display.value+='8'" value="5">
+        <input type="button"  onclick="cal.display.value+='7'" value="4">
+        <input type="button"  onclick="cal.display.value+='-'" value="-">
+        <br><br>
+        <input type="button"  onclick="cal.display.value+='9'" value="3">
+        <input type="button"  onclick="cal.display.value+='8'" value="2">
+        <input type="button"  onclick="cal.display.value+='7'" value="1">
+        <input type="button"  onclick="cal.display.value+='*'" value="*">
+        <br><br>
+        <input type="button"  onclick="cal.display.value+='0'" value="0">
+        <input type="button"  onclick="cal.display.value+='/'" value="/">
+        <input type="button"  onclick="cal.display.value+='%'" value="%">
+        <input type="button"  onclick="cal.display.value=eval(cal.display.value)" value="=">
+        <br><br>
+        <input type="button" id="del" value="DELETE" onclick="cal.display.value=''">
+    </form>
+</div>
+</body>
+</html>
